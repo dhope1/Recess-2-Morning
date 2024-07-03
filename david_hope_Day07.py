@@ -1,3 +1,9 @@
+# David Hope
+# 2200721921
+# Day 7
+
+
+
 # Inheritance and polymorphism
 """
 Inheritance and method overriding
