@@ -1,3 +1,7 @@
+# David Hope
+# 2200721921
+# Day 1
+
 print('testing')
 
 # Defining and printing the sum of two numbers
@@ -18,3 +22,4 @@ print(my_tuple[1])
 num1 = float(input('Enter first number: '))
 num2 = float(input('Enter second number: '))
 print(f'The sum is {num1 + num2:.1f}')
+
