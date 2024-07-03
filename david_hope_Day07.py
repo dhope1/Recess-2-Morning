@@ -150,14 +150,14 @@ Closing file: close()
 # Example 3: Write to a file and read from a file
 
 # Writing to a text file
-with open('example.txt', 'w') as file:
+with open('hope.txt', 'w') as file:
     file.write('I am David, and I love programming\n')
     file.write('I like using Stack Overflow')
 
 print('Text file created successfully')
 
 # Reading from a text file
-with open('example.txt', 'r') as file:
+with open('hope.txt', 'r') as file:
     content = file.read()
     print(content)
 
@@ -180,7 +180,7 @@ DictReader and DictWriter: Classes to read and write CSV files as dictionaries
 import csv
 
 # Writing to a CSV file
-with open('example.csv', 'w', newline='') as csv_file:
+with open('hope.csv', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(['Name', 'Position', 'Course'])
     writer.writerow(['David Hope', 'Student', 'BSSE'])
@@ -188,7 +188,7 @@ with open('example.csv', 'w', newline='') as csv_file:
     
 print('CSV file created successfully')
     
-with open('example.csv', 'r') as csv_file:
+with open('hope.csv', 'r') as csv_file:
     reader = csv.reader(csv_file)
     for row in reader:
         print(row)
@@ -211,22 +211,22 @@ Parsing JSON data: Using json.loads() for handling JSON strings
 import json
 
 # Writing to a JSON file
-student_info = {
+hope = {
     'Name': 'David',
     'Course': 'BSSE',
     'Year': '3'
 }
 
 # Open the file
-with open('student_info.json', 'w') as json_file:
-    json.dump(student_info, json_file) 
+with open('hope.json', 'w') as json_file:
+    json.dump(hope, json_file) 
 
 print('JSON file created successfully')
 
 # Reading the JSON file
-with open('student_info.json', 'r') as json_file:
-    student_info = json.load(json_file)
-    print(student_info)
+with open('hope.json', 'r') as json_file:
+    hope = json.load(json_file)
+    print(hope)
     print('The data read successfully')
 
 print('\n')
@@ -235,7 +235,7 @@ print('\n')
 import xml.etree.ElementTree as ET
 
 # Data to be written to the XML file
-student_info = {
+hope = {
     'Name': 'David',
     'Course': 'BSSE',
     'Year': '3'
@@ -243,24 +243,24 @@ student_info = {
 
 # Writing to an XML file
 root = ET.Element("student")
-for key, value in student_info.items():
+for key, value in hope.items():
     element = ET.SubElement(root, key)
     element.text = value
 
 tree = ET.ElementTree(root)
-tree.write("student_info.xml")
+tree.write("hope.xml")
 
-print("XML file 'student_info.xml' created successfully.")
+print("XML file 'hope.xml' created successfully.")
 
 # Reading from an XML file
-tree = ET.parse('student_info.xml')
+tree = ET.parse('hope.xml')
 root = tree.getroot()
 
-student_info = {}
+hope = {}
 for child in root:
-    student_info[child.tag] = child.text
+    hope[child.tag] = child.text
 
-print(student_info)
+print(hope)
 print('Data from the XML file read successfully')
 print('\n')
 
