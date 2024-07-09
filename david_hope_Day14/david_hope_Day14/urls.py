@@ -21,5 +21,5 @@ from Starters import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('Starters/', include("Starters.urls"))
-    path("", views.index, name:="index")
+    path("", views.index, name="index")
 ]
