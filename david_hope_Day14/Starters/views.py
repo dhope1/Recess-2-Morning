@@ -13,3 +13,9 @@ def display (request):
 
 def randomHTML(request):
     return render(request, "Starters/random.html")
+
+def greet_user_adjusted(request, name):
+    return render(request, "Starters/greet.html", {
+        "key_name": name.capitalize
+
+    })
