@@ -10,3 +10,6 @@ def greet_user(request, name):
 
 def display (request):
     return render(request, "Starters/home.html")
+
+def randomHTML(request):
+    return render(request, "Starters/random.html")
