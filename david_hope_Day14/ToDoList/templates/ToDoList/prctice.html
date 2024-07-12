@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestForm</title>
+</head>
+<body>
+    <form enctype="text/plain" method="post" action="/s">
+        <label for="UserNumber">User Number: </label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" maxlength="10" placeholder="Enter phoneNumber" required>
+        <br>
+        <br>
+        <label for="UserName">UserName:  </label>
+        <input type="text" id="name" name="name" maxlength="25" placeholder="Enter your user name" required>
+        <br>
+        <br>
+        <label for="UserPassword">Password:  </label>
+        <input type="password" id="password" name="password" minlength="8" placeholder="Enter your password" required>
+        <br>
+        <br>
+        <label for="Gender"> 
+             Gender
+             <br>
+            <input type="radio" name="Gender" value="male" required>Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="Gender" value="female" required>Female
+        </label>
+        <br>
+        <br>
+        <label>
+            Interests
+            <br>
+            <input type="checkbox" name="Intersts" value="Sports">Sport
+        </label>
+        <input type="checkbox" name="Intersts" value="Books">Reading
+    </label>
+    <br>
+    <br>
+    <label for="clan">Clan:</label>
+    <select id="clan" name="clan" required>
+        <option value="foot">FOOT</option>
+        <option value="kitawuli">Kitawuli</option>
+        <option value="dai li">DAI LI</optiopn>
+    </select>
+    <br>
+    <br>
+    <label for="message">Messege:</label>
+    <br>
+    <textarea id="message" name="message" rows="3" cols="50"placeholder></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

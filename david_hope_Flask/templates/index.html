@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+  
+</head>
+<body>
+    <h1> Wild Conservation of Endangered Species</h1>
+    <ul>
+        {% for species in species_list %}
+        <li>
+            <h2>{{species.species_name}} - {{species.habitat }}</h2>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{url_for('add_species', filename='add_species.html')}}">Add New Species</a>
+
+  </body>
+</html>
